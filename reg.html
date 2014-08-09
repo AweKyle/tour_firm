@@ -1,0 +1,156 @@
+﻿<html>
+<META content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>
+    Регистрация
+</title>
+<link href="default.css" rel="stylesheet" type="text/css" />
+<body>
+<div id="header">
+	<img src="images/imgico.png" class="left"/>
+	<div id="logo">
+		<h1><a href="index.php">TourFirm</a></h1>
+	</div>
+</div>
+<div id="menu">
+	<ul>
+		<li><a href="index.php"><b>Главная страница</b></a></li>
+		<li><a href="find.php"><b>Поиск тура</b></a></li>
+		<li><a href="agency.php"><b>Агенствам</b></a></li>
+		<li><a href="about.php"><b>О нас</b></a></li>
+	</ul>
+</div>
+<div id="page">
+	<div id="content">
+		<div id="feature" class="two-cols">
+			<div class="box-blue col-one" width="200px">
+				<h2 class="section"><b>Страны</b></h2>
+				<div class="content">
+					<ul>
+						<li>
+							<h3><a href="austria.html">Австрия</a></h3>
+							<ul>
+								<li>Баден</li>
+								<li>Берванг</li>
+								<li>Вена</li>
+								<li>Гайнберг</li>
+								<li>Зальцбугр</li>
+								<li>Зёльден</li>
+								<li>Кирхберг</li>
+								<li>Линц</li>
+								<li>Майрхофен</li>
+								<li>Нойштифт</li>
+								<li>Обертауэрн</li>
+								<li>Санкт Мартинс</li>
+								<li>Фибербрун</li>
+								<li>Холфгартен</li>
+								<li>Циллерталь</li>
+								<li>Штирия</li>
+							</ul>
+						</li>
+						<li>
+							<h3><a href="germany.html">Германия</a></h3>
+							<ul>
+								<li>Бавария</li>
+								<li>Берлин</li>
+								<li>Гамбург</li>
+								<li>Гессен</li>
+								<li>Дрезден</li>
+								<li>Кёльн</li>
+								<li>Киль</li>
+								<li>Мюнхен</li>
+								<li>Нюрнберг</li>
+								<li>Саар</li>
+								<li>Саксония</li>
+								<li>Тюрингия</li>
+								<li>Франкфурт-на-Майне</li>
+								<li>Шлезвиг-Гольштейн</li>
+							</ul>
+						</li>
+							<h3><a href="czech.html">Чехия</a></h3>
+							<ul>
+								<li>Брно</li>
+								<li>Карловы Вары</li>
+								<li>Кутна-Гора</li>
+								<li>Либерец</li>
+								<li>Марианские Лазне</li>
+								<li>Моравия</li>
+								<li>Пардубице</li>
+								<li>Прага</li>
+								<li>Теплице</li>
+								<li>Фримбург</li>
+								<li>Чешский Крумлов</li>
+							</ul>
+						</li>
+						</li>
+							<h3><a href="france.html">Франция</a></h3>
+							<ul>
+								<li>Бретань</li>
+								<li>Валь Торанс</li>
+								<li>Гренобль</li>
+								<li>Канны</li>
+								<li>Лион</li>
+								<li>Марсель</li>
+								<li>Монако</li>
+								<li>Ницца</li>
+								<li>о.Корсика</li>
+								<li>Париж</li>
+								<li>Сен-Жерве</li>
+							</ul>
+						</li>
+						<li>
+							<h3><a href="spain.html">Испания</a></h3>
+							<ul>
+								<li>Авила</li>
+								<li>Алава</li>
+								<li>Аликанте</li>
+								<li>Альбасете</li>
+								<li>Альмерия</li>
+								<li>Астурия</li>
+								<li>Бадахос</li>
+								<li>Барселона</li>
+								<li>Бургос</li>
+								<li>Валенсия</li>
+								<li>Гранада</li>
+								<li>Ирун</li>
+								<li>Канарские острова</li>
+								<li>Коста Бланка</li>
+								<li>Коста Брава</li>
+								<li>Мадрид</li>
+								<li>Майорка</li>
+								<li>о.Ибица</li>
+								<li>Севилья</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		<div class="box-orange col-two">
+		<h2 class="section"><b>Регистрация</b></h2>
+			<div class="content">
+			<form method = "POST" action = "reg.php">
+				*Логин:
+				<p><input type = "text" name = "log" value = "" maxlenght = "25" /></p>
+				*Пароль:
+				<p><input type = "password" name = "pass" value = "" maxlenght = "20" /></p>
+				*Повторите пароль:
+				<p><input type = "password" name = "confPass" value = "" /></p>
+				*Ваш E-MAIL:
+				<p><input type = "text" name = "mail" value = "" /></p>
+				Имя:
+				<p><input type = "text" name = "usName" value = "" /></p>
+				Фамилия:
+				<p><input type = "text" name = "usSurname" value = "" /></p>
+				Город:
+				<p><input type = "text" name = "from" value = "" /></p>
+				<p><input type = "image" src="images/button.png" "Регистрация" />
+				<input type = "reset" value = "Очистить поля" /></p>
+			</form>
+			<kbd>Поля отмеченые * обязательны для заполнения</kbd>
+		</div>
+		</div>
+		</div>
+			
+
+</body>
+  
+</html>

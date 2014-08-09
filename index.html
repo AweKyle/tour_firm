@@ -1,0 +1,115 @@
+﻿<html>
+<META content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>
+    MY_TOUR
+</title>
+<table width="100%" cols = "7" frame = "void">
+    <tr>
+        <head>
+            <td colspan="5" width="80%">TITLE</td>
+            <td colspan="2" width="20%">CONTACTS</td>
+        </head>
+    </tr>
+    <tr>
+        <td>
+			<select>
+				<option>
+					Ваш город(Регион)
+				</option>
+				<option>
+					1
+				</option>
+				<option>
+					2
+				</option>
+			</select>
+		</td>
+        <td>
+			<select>
+				<option>
+					Страны
+				</option>
+				<option>
+					1
+				</option>
+				<option>
+					2
+				</option>
+			</select>
+		</td>
+        <td>
+			<select>
+				<option>
+					Туры по типам
+				</option>
+				<option>
+					1
+				</option>
+				<option>
+					2
+				</option>
+			</select>
+		</td>
+        <td>
+			<select>
+				<option>
+					Горящие туры
+				</option>
+				<option>
+					1
+				</option>
+				<option>
+					2
+				</option>
+			</select>
+		</td>
+        <td>
+			<a href="#search" id="ser">Поиск</a>
+		</td>
+        <td>
+			<a href="#auth" id="reg">Вход/Регистрация</a>
+		</td>
+        <td>
+			Помощь
+		</td>
+    </tr> 
+	<tr>
+		<td align = "right" colspan="7">
+			<div id = "auth">
+				<form method = "POST" action = "reg.php" id = "registr">
+					*Логин:
+					<input type = "text" name = "log" value = "" maxlenght = "25" />
+					*Пароль:
+					<input type = "password" name = "pass" value = "" maxlenght = "20" />
+					*Повторите пароль:
+					<input type = "password" name = "confPass" value = "" />
+					<input type = "submit" id = "registr" value = "Регистрация" />
+				</form>
+				<form method = "POST" action = "auth.php" id="authoriz">
+				<input type = "text" name = "authLog" value = "login" />
+				<input type = "password" name = "authPass" value = "Password" />
+				<input type = "submit" value = "Вход" id="authoriz" />
+				<label id = "hid"><tt>Скрыть</tt></label>
+			</form>
+			</div>
+		</td>
+	</tr>
+</table>
+
+<style>
+    #auth{display: none}
+    </style>
+<script>
+document.getElementById('reg').onclick = function() 
+{
+	document.getElementById('auth').style.display = 'block';
+}
+document.getElementById('hid').onclick = function() 
+{
+	document.getElementById('auth').style.display = 'none';
+}
+</script>
+<body>
+	
+</body>
+</html>
